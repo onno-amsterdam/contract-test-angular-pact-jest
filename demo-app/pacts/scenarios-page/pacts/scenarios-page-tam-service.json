@@ -1,0 +1,114 @@
+{
+  "consumer": {
+    "name": "scenarios-page"
+  },
+  "provider": {
+    "name": "tam-service"
+  },
+  "interactions": [
+    {
+      "description": "A request for scenarios-and-steps",
+      "providerState": "There are three scenarios with steps in database",
+      "request": {
+        "method": "GET",
+        "path": "/scenarios-and-steps",
+        "headers": {
+          "Accept": "application/json, text/plain, */*",
+          "Content-Type": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": [
+          {
+            "scenarioId": 100001,
+            "scenarioName": "first scenario name",
+            "steps": [
+              {
+                "scenarioId": 100001,
+                "stepTypeName": "Given",
+                "step": "there data",
+                "stepPosition": 1
+              },
+              {
+                "scenarioId": 100001,
+                "stepTypeName": "When",
+                "step": "requesting this data",
+                "stepPosition": 2
+              },
+              {
+                "scenarioId": 100001,
+                "stepTypeName": "Then",
+                "step": "a response is received",
+                "stepPosition": 3
+              },
+              {
+                "scenarioId": 100001,
+                "stepTypeName": "And",
+                "step": "the data is handled",
+                "stepPosition": 4
+              }
+            ]
+          }
+        ],
+        "matchingRules": {
+          "$.body": {
+            "match": "type"
+          }
+        }
+      }
+    },
+    {
+      "description": "A request for a demo",
+      "providerState": "There is a demo",
+      "request": {
+        "method": "GET",
+        "path": "/demo-endpoint",
+        "headers": {
+          "Accept": "application/json, text/plain, */*",
+          "Content-Type": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "name": "Name of the demo"
+        },
+        "matchingRules": {
+          "$.body": {
+            "match": "type"
+          }
+        }
+      }
+    },
+    {
+      "description": "A request for a demo",
+      "providerState": "There is an error in the server",
+      "request": {
+        "method": "GET",
+        "path": "/demo-endpoint",
+        "headers": {
+          "Accept": "application/json, text/plain, */*",
+          "Content-Type": "application/json"
+        }
+      },
+      "response": {
+        "status": 500,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

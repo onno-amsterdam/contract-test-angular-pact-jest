@@ -1,0 +1,23 @@
+I, [2022-12-22T19:40:27.733175 #11488]  INFO -- : Received OPTIONS request for mock service administration endpoint POST /interactions. Returning CORS headers: {"Access-Control-Allow-Origin"=>"http://localhost:1234", "Access-Control-Allow-Headers"=>"X-Pact-Mock-Service", "Access-Control-Allow-Methods"=>"DELETE, POST, GET, HEAD, PUT, TRACE, CONNECT, PATCH"}.
+I, [2022-12-22T19:40:27.748683 #11488]  INFO -- : Registered expected interaction GET /demo-endpoint
+I, [2022-12-22T19:40:27.827497 #11488]  INFO -- : Received request GET /demo-endpoint
+I, [2022-12-22T19:40:27.828525 #11488]  INFO -- : Received OPTIONS request for mock service administration endpoint GET /interactions/verification. Returning CORS headers: {"Access-Control-Allow-Origin"=>"http://localhost:1234", "Access-Control-Allow-Headers"=>"X-Pact-Mock-Service", "Access-Control-Allow-Methods"=>"DELETE, POST, GET, HEAD, PUT, TRACE, CONNECT, PATCH"}.
+I, [2022-12-22T19:40:27.829521 #11488]  INFO -- : Found matching response for GET /demo-endpoint
+I, [2022-12-22T19:40:27.841527 #11488]  INFO -- : Verifying - interactions matched
+I, [2022-12-22T19:40:27.858473 #11488]  INFO -- : Received OPTIONS request for mock service administration endpoint DELETE /interactions. Returning CORS headers: {"Access-Control-Allow-Origin"=>"http://localhost:1234", "Access-Control-Allow-Headers"=>"X-Pact-Mock-Service", "Access-Control-Allow-Methods"=>"DELETE, POST, GET, HEAD, PUT, TRACE, CONNECT, PATCH"}.
+I, [2022-12-22T19:40:27.872856 #11488]  INFO -- : Cleared interactions
+I, [2022-12-22T19:40:27.905555 #11488]  INFO -- : Received OPTIONS request for mock service administration endpoint POST /interactions. Returning CORS headers: {"Access-Control-Allow-Origin"=>"http://localhost:1234", "Access-Control-Allow-Headers"=>"X-Pact-Mock-Service", "Access-Control-Allow-Methods"=>"DELETE, POST, GET, HEAD, PUT, TRACE, CONNECT, PATCH"}.
+I, [2022-12-22T19:40:27.920891 #11488]  INFO -- : Registered expected interaction GET /demo-endpoint
+I, [2022-12-22T19:40:27.936650 #11488]  INFO -- : Received request GET /demo-endpoint
+I, [2022-12-22T19:40:27.936650 #11488]  INFO -- : Found matching response for GET /demo-endpoint
+I, [2022-12-22T19:40:27.938049 #11488]  INFO -- : Received OPTIONS request for mock service administration endpoint GET /interactions/verification. Returning CORS headers: {"Access-Control-Allow-Origin"=>"http://localhost:1234", "Access-Control-Allow-Headers"=>"X-Pact-Mock-Service", "Access-Control-Allow-Methods"=>"DELETE, POST, GET, HEAD, PUT, TRACE, CONNECT, PATCH"}.
+I, [2022-12-22T19:40:27.952552 #11488]  INFO -- : Verifying - interactions matched
+I, [2022-12-22T19:40:27.967854 #11488]  INFO -- : Received OPTIONS request for mock service administration endpoint DELETE /interactions. Returning CORS headers: {"Access-Control-Allow-Origin"=>"http://localhost:1234", "Access-Control-Allow-Headers"=>"X-Pact-Mock-Service", "Access-Control-Allow-Methods"=>"DELETE, POST, GET, HEAD, PUT, TRACE, CONNECT, PATCH"}.
+I, [2022-12-22T19:40:27.983826 #11488]  INFO -- : Cleared interactions
+I, [2022-12-22T19:40:27.998697 #11488]  INFO -- : Received OPTIONS request for mock service administration endpoint POST /pact. Returning CORS headers: {"Access-Control-Allow-Origin"=>"http://localhost:1234", "Access-Control-Allow-Headers"=>"X-Pact-Mock-Service", "Access-Control-Allow-Methods"=>"DELETE, POST, GET, HEAD, PUT, TRACE, CONNECT, PATCH"}.
+I, [2022-12-22T19:40:28.014353 #11488]  INFO -- : Updating pact for tam-service at C:/Development/ctapj/demo-app/pacts/scenarios-page/pacts/scenarios-page-tam-service.json
+I, [2022-12-22T19:40:28.017320 #11488]  INFO -- : *****************************************************************************
+I, [2022-12-22T19:40:28.018319 #11488]  INFO -- : Updating existing file .C:/Development/ctapj/demo-app/pacts/scenarios-page/pacts/scenarios-page-tam-service.json as pactfile_write_mode is :update
+I, [2022-12-22T19:40:28.018319 #11488]  INFO -- : Only interactions defined in this test run will be updated.
+I, [2022-12-22T19:40:28.018319 #11488]  INFO -- : As interactions are identified by description and provider state, pleased note that if either of these have changed, the old interactions won't be removed from the pact file until the specs are next run with :pactfile_write_mode => :overwrite.
+I, [2022-12-22T19:40:28.018319 #11488]  INFO -- : *****************************************************************************
