@@ -35,6 +35,10 @@ Run the contract tests with the command:
 $ npm run test:contract:consumer
 ```
 
+## Contract tests
+
+In the folder "test/contract/consumer" you'll find one test file with two tests. After running the for the first time the contracts or "pacts" will be created in the pacts folder.
+
 ## Issues
 
 The issue below can manifast itself due the length of the files paths in the dependencies. You can fix this by shortening the path, update the name of the project to something short like: ctapj.
